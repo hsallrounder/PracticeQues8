@@ -1,9 +1,9 @@
 public class outer {
-    void display(){
+    public void display(){
         System.out.println("Outer Function");
     }
-    public static class inner{
-        void display(){
+    public class inner{
+        public void display(){
             System.out.println("Inner Function");
         }
     }
@@ -11,8 +11,8 @@ public class outer {
 class classtest{
     public static void main(String[] args) {
         outer obj1 = new outer();
-        outer.inner obj2 = new outer.inner();
         obj1.display();
+        outer.inner obj2 = obj1.new inner();
         obj2.display();
     }
 }
