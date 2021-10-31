@@ -2,6 +2,7 @@ public interface test{
     public int square(int x);
 }
 class arithmetic implements test{
+    @Override
     public int square (int y){
         System.out.println("inside arith");
         return (y*y);
