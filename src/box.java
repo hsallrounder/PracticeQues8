@@ -27,9 +27,10 @@ class box3d extends box {
 
 class q4{
     public static void main(String[] args) {
-        box obj1 = new box(2,3);
+        box obj1 = new box(4,3);
         box3d obj2 = new box3d(2,3,6);
         System.out.println(obj1.area());
+        System.out.println(obj2.area());
         System.out.println(obj2.volume());
     }
 }
